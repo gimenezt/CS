@@ -11,7 +11,7 @@ namespace Exercicio1
         public static void Main(string[] args)
         {
             double num1, num2, soma;
-            Console.WriteLine("Digite odois números para a soma: ");
+            Console.WriteLine("Digite oS dois números para o cálculo da soma: ");
             num1 = double.Parse(Console.ReadLine());
             num2 = double.Parse(Console.ReadLine());
             soma = num1 + num2;

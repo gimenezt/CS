@@ -8,13 +8,13 @@ namespace Exercicio2
 {
     class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            double num1, num2, soma;
-            num1 = double.Parse(Console.ReadLine());
-            num2 = double.Parse(Console.ReadLine());
-            soma = num1 + num2;
-            Console.WriteLine("A soma é: " + soma);
+            double lado, area;
+            Console.WriteLine("Digite o tamanho do lado do quadrado: ");
+            lado = double.Parse(Console.ReadLine());
+            area = lado * lado;
+            Console.WriteLine("A área é {0}", area);
         }
     }
 }

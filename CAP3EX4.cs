@@ -16,7 +16,7 @@ namespace exercicio3
             Console.WriteLine("Digite o percentual de aumento: ");
             aumento = double.Parse(Console.ReadLine());
             total = salario + (aumento * salario / 100);
-            Console.WriteLine("O seu salário final com aumento é R$ " + total);
+            Console.WriteLine("O salário final é R$ " + total);
 
         }
     }

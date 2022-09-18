@@ -4,12 +4,16 @@ class Program
 {
     static void Main(string[] args)
     {
-        Funcionario f1 = new Funcionario("Luana");
+        Funcionario f1 = new Funcionario();
+        f1.setNome("Luana");
         f1.setMatricula(2345);
         f1.setSalario(1800.00);
         
         f1.imprimir();
-
+        //f2.imprimir():
+        //f3.imprimir():
+        //f4.imprimir();
+        
         Console.ReadKey();
     }
 }
@@ -41,7 +45,7 @@ namespace Atividade2
         {
             return this.Nome;
         }
-        public void setNome()
+        public void setNome(string Nome)
         {
             this.Nome = Nome;
         }
@@ -50,7 +54,7 @@ namespace Atividade2
         {
             return this.Matricula;
         }
-        public void setMatricula()
+        public void setMatricula(int Matricula)
         {
             this.Matricula = Matricula;
         }
@@ -59,7 +63,7 @@ namespace Atividade2
         {
             return this.Salario;
         }
-        public void setSalario()
+        public void setSalario(decimal Salario)
         {
             this.Salario = Salario;
         }

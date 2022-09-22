@@ -1,8 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Atividade2;
 
 namespace Atividade2
 {
@@ -10,22 +7,29 @@ namespace Atividade2
     {
         static void Main(string[] args)
         {
-         
-            Funcionario [] f1 = new Funcionario [4];
-            f1[0] = new Funcionario();
+            Funcionario[] f1 = new Funcionario[4];
 
+            f1[0] = new Funcionario();
             f1[0].setNome("Luana");
             f1[0].setMatricula(2345);
             f1[0].setSalario(1800);
 
-            f1.imprimir();
+            f1[0].imprimir();
             //f2.imprimir():
             //f3.imprimir():
             //f4.imprimir();
 
             Console.ReadKey();
         }
+    }
+}
 
+//
+
+using System;
+
+namespace Atividade2
+{
         class Funcionario
         {
             private string Nome;
@@ -66,4 +70,3 @@ namespace Atividade2
             }
         }
     }
-}

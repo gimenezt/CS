@@ -1,29 +1,27 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace ExArrayList.cs
+namespace Colecoes
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Funcionario[] f = new Funcionario[2];
-            f[0].Nome = "Maria";
-            f[0].Matricula = 123;
-            f[0].CPF = "6765657";
-
-
-            f[1].Nome = "Pedro";
-            f[1].Matricula = 789;
-            f[1].CPF = "2213438";
-
             Departamento d = new Departamento();
-            d.Nome = "Vendas";
 
-            for (int i = 0; i < 2; i++)
-            {
-                d.adicionaFuncionario(f[i]);
-                d.imprimeDepartamento();
-            }
+            d.nome = "vendas";
+            d.adicionaFunc("Maria", "6765657", 123);
+            d.adicionaFunc("Pedro", "2213438", 789);
+
+            d.imprimeDepartamento();
+
+            Console.ReadKey();
+        }
+    }
             }
     }
 }
@@ -34,7 +32,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ExArrayList.cs
+namespace Colecoes
 {
     class Funcionario
     {
@@ -44,6 +42,10 @@ namespace ExArrayList.cs
             this.Matricula = matricula;
             this.CPF = cpf;
         }
+        
+        private string Nome;
+        private string CPF;
+        private int Matricula;
         
         public void setNome(string nome){
             this.Nome = nome
@@ -84,7 +86,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Collections;
 
-namespace ExArrayList.cs
+namespace Colecoes
 {
     class Departamento
     {

@@ -12,7 +12,7 @@ namespace Colecoes
         static void Main(string[] args)
         {
             Departamento d = new Departamento();
-
+            
             d.nome = "vendas";
             d.adicionaFunc("Maria", "6765657", 123);
             d.adicionaFunc("Pedro", "2213438", 789);
@@ -100,8 +100,9 @@ namespace Colecoes
 
         public Departamento() { }
 
-        public void adicionaFuncionario(Funcionario f)
+        public void adicionaFuncionario(string nome, string cpf, int matricula)
         {
+            Funcionario f = new Funcionario(nome, cpf, matricula)
             ListaFuncionarios.Add(f);
         }
 

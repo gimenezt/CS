@@ -38,18 +38,36 @@ namespace ExArrayList.cs
 {
     class Funcionario
     {
-        public string Nome { get; set; }
-        public int Matricula { get; set; }
-        public string CPF { get; set; }
-
         public Funcionario(string nome, int matricula, string cpf)
         {
             this.Nome = nome;
             this.Matricula = matricula;
             this.CPF = cpf;
         }
+        
+        public void setNome(string nome){
+            this.Nome = nome
+        }
 
-        public Funcionario(){}
+         public string getNome(string nome){
+            this.Nome = nome
+        }
+        
+        public void setMatricula(string matricula){
+            this.Matriculaome = matricula
+        }
+
+         public string getMatricula(string matricula){
+            this.Matricula = matricula
+        }
+        
+        public void setCPF(string cpf){
+            this.CPF = cpf
+        }
+
+         public string getCPF(string cpf){
+            this.CPF = cpf
+        }
 
         public void imprimeFuncionario()
         {
